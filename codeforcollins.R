@@ -14,7 +14,9 @@ carroutes <- stplanr::route_osrm(from = c(-0.095477,51.377621), to = c(-0.111377
 # 
 # tm_shape(st_sf(sf::st_line_sample(carroutes %>% st_as_sf() %>% st_transform(crs = 27700),n = 100) %>% st_cast(to = "POINT"))[1,]) + tm_dots()
 
-
+FnAddedCode<-function(){
+  
+ }
 
 odroutes <- data.frame(
   startloc = "a",
